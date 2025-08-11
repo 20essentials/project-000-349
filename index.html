@@ -6,31 +6,8 @@
     <title>Return</title>
     <meta name="google" content="notranslate" />
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="sphere-container">
-      <div class="sphere" id="sphere"></div>
-    </div>
-
-    <script>
-      const sphere = document.getElementById('sphere');
-      const numLayers = 20;
-
-      for (let i = 0; i < numLayers; i++) {
-        const layer = document.createElement('div');
-        const stem = document.createElement('div');
-        layer.className = 'layer';
-        stem.className = 'layer stem';
-        layer.style.transform = `rotateY(${
-          i * (360 / numLayers)
-        }deg) translateZ(100px)`;
-        stem.style.transform = `rotateX(${
-          i * (360 / numLayers)
-        }deg) translateZ(100px)`;
-        sphere.appendChild(layer);
-        sphere.appendChild(stem);
-      }
-    </script>
+    <script type="module" src="/App.jsx"></script>
   </body>
 </html>
